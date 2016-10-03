@@ -4,7 +4,7 @@
   </head>
   <body bgcolor=white>
     <p>This is the home page </p>
-    <input type="button" onclick="is_laptop_forgotten();" name="ok" value="Click Me"  />
+    <input type="button" onclick="is_laptop_forgotten();" name="ok" value="is_laptop_forgotten"  />
   </body>
 </html>
 <script type="text/javascript">
@@ -21,9 +21,9 @@
   }
   function is_laptop_forgotten() {
     if(leave_house_to_work()){
-      document.open("Yes");  
+      document.open("<p>Yes</p>");  
     }
-    document.open("No");
+    document.open("<p>No</p>");
   }
   
 </script>
