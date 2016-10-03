@@ -3,16 +3,26 @@
     <title>Hi</title>
   </head>
   <body bgcolor=white>
-    <table border="0" cellpadding="10">
-      <tr>
-        <td>
-          <img src="images/springsource.png">
-        </td>
-        <td>
-          <h1>Sample "Hello, World" Application</h1>
-        </td>
-      </tr>
-    </table>
     <p>This is the home page </p>
   </body>
 </html>
+<script type="text/javascript">
+  function leave_house_to_work() {
+    var isMorning = false;
+
+    var newDate = new Date();
+    var hours = newDate.getHours();
+    var day = newDate.getDay();
+
+    if (hours >= 6 && hours <= 9 && day < 6 && day > 0) {
+      return true;
+    }
+  }
+
+  function is_laptop_forgotten() {
+    if(leave_house_to_work(){
+      return "Yes"  
+    }
+    return "No" 
+  }
+</script>
